@@ -1,0 +1,19 @@
+{
+  "name": "conjur",
+  "description": "This role sets up a Conjur OSS",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[base]", 
+    "recipe[conjur_configuration]"
+  ],
+  "env_run_lists": {
+
+  }
+}

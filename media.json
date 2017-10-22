@@ -1,0 +1,19 @@
+{
+  "name": "media",
+  "description": "This is the role that will configure a machine with the media share and other items so that it can both gather and server media",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[base]", 
+    "recipe[media_configuration]"
+  ],
+  "env_run_lists": {
+
+  }
+}

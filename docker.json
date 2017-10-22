@@ -1,0 +1,19 @@
+{
+  "name": "docker",
+  "description": "This role will install docker as well as the base configuration",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[base]", 
+    "recipe[docker_configuration]"
+  ],
+  "env_run_lists": {
+
+  }
+}
