@@ -9,7 +9,7 @@ pipeline {
         }
         stage ('Upload new role') {
             steps {
-                sh 'ls | grep .json | knife upload'
+                sh 'ls | grep .json | knife upload .'
             }
         }
         stage ('Remove Chef configuration file') {
